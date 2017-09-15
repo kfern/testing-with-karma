@@ -91,9 +91,9 @@ npm test
 
 ```
 
-WARN [watcher]: Pattern "/home/fernan/Proyectos/testing/testing-with-karma/src/index.html" does not match any file.
-[watcher]: Pattern "/home/fernan/Proyectos/testing/testing-with-karma/src/**/*.js" does not match any file.
-[watcher]: Pattern "/home/fernan/Proyectos/testing/testing-with-karma/test/**/*.spec.js" does not match any file.
+WARN [watcher]: Pattern "[...]/testing-with-karma/src/index.html" does not match any file.
+WARN [watcher]: Pattern "[...]/testing-with-karma/src/**/*.js" does not match any file.
+WARN [watcher]: Pattern "[...]/testing-with-karma/test/**/*.spec.js" does not match any file.
 INFO [karma]: Karma v1.7.1 server started at http://0.0.0.0:9876/
 INFO [launcher]: Launching browser ChromeHeadless with unlimited concurrency
 INFO [launcher]: Starting browser ChromeHeadless
