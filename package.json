@@ -1,0 +1,28 @@
+{
+  "name": "testing-with-karma",
+  "version": "1.0.0",
+  "description": "## Instalar Karma con Chrome, Qunit",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfern/testing-with-karma.git"
+  },
+  "author": "@kfern",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kfern/testing-with-karma/issues"
+  },
+  "homepage": "https://github.com/kfern/testing-with-karma#readme",
+  "devDependencies": {
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-fixture": "^0.2.6",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-qunit": "^1.2.1",
+    "qunitjs": "^2.4.0"
+  }
+}
