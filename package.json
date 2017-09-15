@@ -1,7 +1,7 @@
 {
   "name": "testing-with-karma",
   "version": "1.0.0",
-  "description": "## Instalar Karma con Chrome, Qunit",
+  "description": "Instalar Karma con Chrome, qunit, fixtures, coverage",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/karma start karma.conf.js"
