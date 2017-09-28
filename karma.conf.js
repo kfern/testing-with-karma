@@ -12,6 +12,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'src/index.html',
+      'node_modules/jquery/dist/jquery.js',
       'src/**/*.js',
       'test/**/*.spec.js'
     ],

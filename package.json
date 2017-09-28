@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kfern/testing-with-karma#readme",
   "devDependencies": {
+    "jquery": "^1.12.4",
     "karma": "^1.7.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.1",

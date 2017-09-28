@@ -104,3 +104,41 @@ npm ERR! Test failed.  See above for more details.
 ```
 
 El resultado es el esperado ya que Karma está funcionando pero aún no se han incluido los archivos con el código ni los tests
+
+## Test de un plugin jquery
+
+Instalar jquery en el proyecto. En este caso se instala una versión inferior a la 2
+
+```
+npm i --save-dev jquery@">1.12.0 <2.0.0"
+```
+
+Modificar el apartado files en karma.conf.js para cargar jquery en el contexto del navegador. 
+
+```
+
+    // list of files / patterns to load in the browser
+    files: [
+      'src/index.html',
+      'node_modules/jquery/dist/jquery.js',
+      'src/**/*.js',
+      'test/**/*.spec.js'
+    ],
+    
+```
+    
+Es el equivalente a incluir en el html una referencia a un recurso externo mediante el tag script
+
+Para realizar las pruebas: 
+
+Añadir en el proyecto:
+El archivo html src/index.html
+Los scripts propios usados en el proyecto en src/
+Los tests en test/ con el patrón *.spec.js (Por ejemplo, main.spec.js)
+
+Ejecutar los tests:
+
+```
+npm test
+```
+
