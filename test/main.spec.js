@@ -60,28 +60,3 @@ describe('Plugin Jquery:', function(){
   });
   
 });//describe
-
-
-/*
-
-  QUnit.test( 'Objetivo 3. Implementar el comportamiento del componente cuando se pulsa en el título.', function( assert ) {
-    // Arrange
-    var filtro = 'div.wrapper_a > div.simplebox';
-    var contenido_visible;
-    // Act
-    $(document).kfern.simplebox();
-    contenido_visible = $(filtro + ' > div.simplebox-content').is(":visible");
-    $(filtro + ' > h2.simplebox-title > a').trigger('click');
-    // Assert
-    assert.ok( contenido_visible == false && $(filtro + ' > div.simplebox-content').is(":visible") == true, 'Si un contenido está oculto, cuando se pulse en el título se ha de mostrar el contenido asociado.' );
-    
-    //Si un contenido está visible, cuando se pulse en el título se ha de ocultar el contenido asociado
-    // Arrange
-    contenido_visible = $(filtro + ' > div.simplebox-content').is(":visible");
-    //Act
-    $(filtro + ' > h2.simplebox-title > a').trigger('click');
-    // Assert
-    assert.ok( contenido_visible && $(filtro + ' > div.simplebox-content').is(":visible") == false, 'Si un contenido está visible, cuando se pulse en el título se ha de ocultar el contenido asociado.' );
-
-  });
-*/
