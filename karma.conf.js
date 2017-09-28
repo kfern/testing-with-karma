@@ -1,21 +1,31 @@
 // Karma configuration
-module.exports = function(config) {
-    
+module.exports = function (config) {
+
   config.set({
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['qunit', 'fixture'],
+    frameworks: ['mocha', 'chai', 'fixture'],
 
     // list of files / patterns to load in the browser
     files: [
-      'src/index.html',
       'node_modules/jquery/dist/jquery.js',
+      'test/fixtures/**/*.html',
       'src/**/*.js',
       'test/**/*.spec.js'
     ],
+
+    client: {
+      chai: {
+        includeStack: true
+      },
+      mocha: {
+        reporter: 'html',
+        ui: 'bdd'
+      }
+    },
 
     // list of files to exclude
     exclude: [
@@ -24,8 +34,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-         'src/index.html': ['html2js'],
-         'src/**/*.js': ['coverage']
+      'test/fixtures/**/*.html': ['html2js'],
+      'src/**/*.js': ['coverage']
     },
 
     // test results reporter to use
@@ -35,15 +45,15 @@ module.exports = function(config) {
 
     // optionally, configure the coverage reporter 
     coverageReporter: {
-        reporters: [
+      reporters: [
         {
-            type: 'text-summary'
+          type: 'text-summary'
         },
         {
-            type: 'html',
-            dir: 'coverage/'
-            }
-        ]
+          type: 'html',
+          dir: 'coverage/'
+        }
+      ]
     },
 
     // web server port
